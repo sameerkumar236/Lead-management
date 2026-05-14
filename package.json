@@ -1,0 +1,53 @@
+{
+  "name": "leadflow-crm",
+  "private": true,
+  "version": "1.0.0",
+  "description": "LeadFlow CRM is a polished full-stack lead management SaaS dashboard built with React, Vite, Express, and MongoDB.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run client\" \"npm run server:dev\"",
+    "client": "vite",
+    "server:dev": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "seed": "node server/seed.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "lucide-react": "^0.468.0",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.3",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vite": "^6.0.7"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
