@@ -1,6 +1,8 @@
 import type { ApiResponse, DashboardStats, Lead, LeadFilters, LeadInput, LeadStatus } from "../types/lead";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:5000/api";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ??
+  "https://lead-management-15s6.onrender.com/api";
 
 const request = async <T>(endpoint: string, options: RequestInit = {}): Promise<ApiResponse<T>> => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
